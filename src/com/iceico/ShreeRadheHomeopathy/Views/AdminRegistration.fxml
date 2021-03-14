@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iceico.ShreeRadheHomeopathy.Controller.AdminRegistrationController">
+	<center>
+		<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1360.0" style="-fx-background-color: #FCF3CF;" BorderPane.alignment="CENTER">
+			<center>
+				<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="643.0" BorderPane.alignment="CENTER">
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="316.0" minWidth="10.0" prefWidth="280.0" />
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="381.0" minWidth="10.0" prefWidth="381.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints maxHeight="83.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="162.0" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="157.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="151.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+						<RowConstraints fillHeight="false" maxHeight="156.0" minHeight="-Infinity" prefHeight="147.0" />
+					</rowConstraints>
+					<children>
+						<TextField fx:id="txtFirstName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="147.0" promptText="FIRST NAME" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+						<TextField fx:id="txtLastName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="143.0" promptText="LAST NAME" GridPane.columnIndex="1" GridPane.rowIndex="1">
+							<GridPane.margin>
+								<Insets left="165.0" />
+							</GridPane.margin>
+						</TextField>
+						<TextField fx:id="txtEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="309.0" promptText="EMAIL ID" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+						<TextField fx:id="txtMobileNo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="309.0" promptText="MOBILE NO." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+						<PasswordField fx:id="txtPassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="309.0" promptText="PASSWORD" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+						<PasswordField fx:id="txtConfirmPassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="309.0" promptText="CONFIRMED PASSWORD" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+						<TextField fx:id="txtAddress" accessibleRole="TEXT_AREA" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="309.0" promptText="ADDRESS" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+						<Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="648.0" text="ADMIN REGISTRATION">
+							<font>
+								<Font name="Times New Roman Bold" size="24.0" />
+							</font>
+							<GridPane.margin>
+								<Insets top="10.0" />
+							</GridPane.margin>
+						</Label>
+						<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="113.0" prefWidth="312.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+							<children>
+								<Button fx:id="btnClear" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickClear" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: #f87d18;" text="CLEAR" textFill="#011e25">
+									<font>
+										<Font name="Times New Roman" size="12.0" />
+									</font>
+									<HBox.margin>
+										<Insets bottom="50.0" left="20.0" />
+									</HBox.margin>
+								</Button>
+							</children>
+							<GridPane.margin>
+								<Insets right="30.0" />
+							</GridPane.margin>
+						</HBox>
+						<Button fx:id="btn_register" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickRegister" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: #f87d18;" text="REGISTER" textFill="#011e25" GridPane.rowIndex="7">
+							<GridPane.margin>
+								<Insets bottom="75.0" left="170.0" />
+							</GridPane.margin>
+							<font>
+								<Font name="Times New Roman" size="12.0" />
+							</font>
+						</Button>
+						<Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="322.0" text="Full Name" GridPane.rowIndex="1">
+							<font>
+								<Font name="Times New Roman" size="18.0" />
+							</font>
+							<GridPane.margin>
+								<Insets left="80.0" />
+							</GridPane.margin>
+						</Label>
+						<Label prefHeight="30.0" prefWidth="322.0" text="Email ID" GridPane.rowIndex="2">
+							<font>
+								<Font name="Times New Roman" size="18.0" />
+							</font>
+							<GridPane.margin>
+								<Insets left="80.0" />
+							</GridPane.margin>
+						</Label>
+						<Label prefHeight="30.0" prefWidth="322.0" text="Password" GridPane.rowIndex="4">
+							<font>
+								<Font name="Times New Roman" size="18.0" />
+							</font>
+							<GridPane.margin>
+								<Insets left="80.0" />
+							</GridPane.margin>
+						</Label>
+						<Label prefHeight="30.0" prefWidth="322.0" text="Confirmed Password" GridPane.rowIndex="5">
+							<font>
+								<Font name="Times New Roman" size="18.0" />
+							</font>
+							<GridPane.margin>
+								<Insets left="80.0" />
+							</GridPane.margin>
+						</Label>
+						<Label prefHeight="30.0" prefWidth="322.0" text="Address" GridPane.rowIndex="6">
+							<font>
+								<Font name="Times New Roman" size="18.0" />
+							</font>
+							<GridPane.margin>
+								<Insets left="80.0" />
+							</GridPane.margin>
+						</Label>
+						<Label prefHeight="30.0" prefWidth="322.0" text="Mobile Number" GridPane.rowIndex="3">
+							<font>
+								<Font name="Times New Roman" size="18.0" />
+							</font>
+							<GridPane.margin>
+								<Insets left="80.0" />
+							</GridPane.margin>
+						</Label>
+					</children>
+					<BorderPane.margin>
+						<Insets bottom="10.0" top="40.0" />
+					</BorderPane.margin>
+				</GridPane>
+			</center>
+			<top>
+				<VBox prefHeight="178.0" prefWidth="1390.0" BorderPane.alignment="CENTER">
+					<children>
+						<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="1390.0" style="-fx-background-color: black;">
+							<children>
+								<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="156.0" prefWidth="1384.0" style="-fx-background-color: #F7C373;">
+									<children>
+										<ImageView fitHeight="147.0" fitWidth="155.0">
+											<image>
+												<Image url="@../Images/Doctor-Symbol-Caduceus.png" />
+											</image>
+											<HBox.margin>
+												<Insets left="20.0" top="10.0" />
+											</HBox.margin>
+										</ImageView>
+										<Label prefHeight="142.0" prefWidth="1123.0" text=" SHREE RADHE HOMEOPATHY">
+											<HBox.margin>
+												<Insets top="20.0" />
+											</HBox.margin>
+											<font>
+												<Font name="Times New Roman Bold" size="72.0" />
+											</font>
+										</Label>
+										<Button fx:id="btnExit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onClickExit" prefHeight="21.0" prefWidth="33.0" style="-fx-background-color: RED;" text="X">
+											<HBox.margin>
+												<Insets left="20.0" top="10.0" />
+											</HBox.margin>
+										</Button>
+									</children>
+									<HBox.margin>
+										<Insets right="10.0" />
+									</HBox.margin>
+								</HBox>
+							</children>
+						</HBox>
+					</children>
+				</VBox>
+			</top>
+			<BorderPane.margin>
+				<Insets />
+			</BorderPane.margin>
+		</BorderPane>
+	</center>
+</BorderPane>
